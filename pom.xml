@@ -12,7 +12,7 @@
     <module>common-eureka-server</module>
   </modules>
   <name>leadeon-cmcc-common</name>
-  <url>http://www.example.com</url>
+  <url>测试</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
