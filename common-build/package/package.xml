@@ -9,8 +9,8 @@
 	<fileSets>
 		<!-- 启动脚本文件打包 -->
 		<fileSet>
-			<directory>../bin/</directory>
-			<outputDirectory>/</outputDirectory>
+			<directory>../common-build/bin/</directory>
+			<outputDirectory>${file.separator}</outputDirectory>
 			<includes>
 				<include>*.sh</include>
 				<include>*.cmd</include>
@@ -20,12 +20,12 @@
 		</fileSet>
 		<fileSet>
 			<directory>bin</directory>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>${file.separator}</outputDirectory>
 		</fileSet>
 		<!--资源文件打包 -->
 		<fileSet>
 			<directory>src/main/resources</directory>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>${file.separator}</outputDirectory>
 			<excludes>
 				<exclude>application-*.properties</exclude>
 			</excludes>
@@ -33,7 +33,7 @@
 		<!-- 启动jar文件打包 -->
 		<fileSet>
 			<directory>${project.build.directory}</directory>
-			<outputDirectory>/</outputDirectory>
+			<outputDirectory>${file.separator}</outputDirectory>
 			<includes>
 				<include>*.jar</include>
 			</includes>
